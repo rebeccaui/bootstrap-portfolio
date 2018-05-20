@@ -1,0 +1,154 @@
+body {
+    background: url("../images/background.jpg");
+    margin: auto auto 80px auto;
+}
+
+#navBox {
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+}
+
+
+#nameBox {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: ‘Georgia’, Times, Times New Roman, serif;
+    font-size: 28px;
+    height: 70px;
+    width: 300px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    margin: 0px 0px;
+    width: 100%;
+}
+
+.navbar {
+    text-align: right;
+    padding: 30px 20px 0px 0px;
+    background-color: #ffffff;
+    text-decoration: hidden;
+    width: 100%;
+}
+
+#navLinks {
+    background-color: #ffffff;
+    -webkit-text-fill-color: #777777;
+    text-decoration: hidden;
+    width: 100%;
+    font-family: ‘Arial’, ‘Helvetica’, Helvetica, sans-serif;
+}
+
+#middleSection {
+    padding: 0 0;
+}
+
+
+.jumbotron h1 {
+    font-family: ‘Georgia’, Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 36px;
+}
+
+.divider {
+    display: block;
+    border: 1px solid #777777;
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    margin: 15px 0px 0px 0px;
+}
+
+.jumbotron img {
+    height: 200px;
+    margin: 0px 20px 20px 0px;
+    display: block;
+    float: left;
+}
+
+.jumbotron .p1 {
+    font-family: ‘Arial’, ‘Helvetica’, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: .5px;
+    margin: 0;
+    display: block;
+    max-width: 100%;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #4aaaa5;
+}
+
+.text-muted {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: ‘Arial’, ‘Helvetica Neue’, Helvetica, sans-serif;
+}
+
+a:link, a:visited, a:active {
+    color: #777777;
+    text-decoration: none;    
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+a:focus {
+    text-decoration: underline;
+    color: yellowgreen;
+    text-decoration: wavy;
+    
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#portfolioRow {
+    height: 300px;
+    text-align: center;
+}
+
+.workSample {
+    float: left;
+    width: 25%;
+    height: auto;
+    padding: 4% 4%;
+    position: relative;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.workSample:hover {
+    opacity: 0.3;
+}
+
+.banner:hover {
+    opacity: 1;
+}
+
+.banner {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
