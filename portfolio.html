@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <Title>Bootstrap Portfolio</Title>
+    <Title>Wieberdink Portfolio</Title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/images/inkedFavicon.jpg" type="image/x-icon"/>
+    <link rel="icon" href="assets/images/inkedFavicon.jpg" type="image/ico"/>
+    <!--Bootstrap and CSS Links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
 </head>
 <body>
-
-
-    <div class="container" id="navBox">
-        <div class="col-md-4">
-            <h1 id="nameBox">Rebecca C. Wieberdink</h1>
-
-        </div>
-
-        <div class="col-md-8">
-            <!--Static Navbar-->
-            <nav class="navbar navbar-expand-lg justify-content-end">
-                    <ul id="navLinks">
-                        <a class="nav-link" href="index.html">About | </a>
-                        <a class="nav-link" href="portfolio.html">Portfolio | </a>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </ul>
-            </nav>
-        </div>
-    </div>
-    
+        <nav class="container navbar navbar-expand-lg justify-content-end">
+            <div class="col-md-4" id="nameBox">
+                Rebecca C. Wieberdink
+            </div>
+            <div class="col-md-4" id="space">
+            </div>
+            <!--Navigation-->
+            <div class="col-md-4" id="navLinks">
+                <ul id="navList">
+                    <a class="nav-link" href="index.html">About | </a>
+                    <a class="nav-link" href="portfolio.html">Portfolio | </a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </ul>
+            </div>
+        </nav>
 
     <div class="container" id="middleSection">
         <div class="jumbotron">
@@ -33,43 +35,96 @@
             <p class="divider"></p>
 
             <div class="row portfolioRow">
-                    <!--Changed the columns to three for style preferences-->
-                    <div class="col-lg-4">
-                        <a href="https://homsau.github.io/State-of-the-World/" target="_blank">
-                        <img class="workSample" src="assets/images/kyoto.jpg" alt="State of the World App">
-                        </a>
-                    </div>
-        
-                    <div class="col-lg-4">
-                        <a href="https://rwieberdink.github.io/unit-4-game/" target="_blank">
-                        <img class="workSample" src="assets/images/fujiSummit.jpg" alt="Gringott's Coin Collector Game">
-                        </a>
-                    </div>
-        
-                    <div class="col-lg-4">
-                        <a href="https://rwieberdink.github.io/Psychic-Game/" target="_blank">
-                        <img class="workSample" src="assets/images/buddhistMonk.jpg" alt="Psychic Game">
-                        </a>
-                    </div>
-            </div>
-            <div class="row portfolioRow">
-                <div class="col-lg-4 col-sm-12">
-                    <a href="https://rwieberdink.github.io/GIFtastic/" target="_blank">
-                        <img class="workSample" src="assets/images/traditional.jpg" alt="">
+                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <a href="https://homsau.github.io/State-of-the-World/" target="_blank">
+                    <img class="workSample" src="assets/images/kyoto.jpg" alt="State of the World App">
                     </a>
+                    <span class="label">
+                        State of the World
+                        <a class="labelLink" href="https://homsau.github.io/State-of-the-World/" target="_blank">
+                        <br>Play
+                        </a> | 
+                        <a class="labelLink" href="https://github.com/rwieberdink/State-of-the-World/" target="_blank">
+                            Code
+                        </a>
+                    </span>
+                </div>
+
+                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <a href="https://rwieberdink.github.io/TriviaGame/" target="_blank">
+                        <img class="workSample" src="assets/images/hpTriviaThumbnail.jpg" alt="Harry Potter Trivia Game" style="border:0;">
+                    </a>
+                    <span class="label">
+                        Harry Potter Trivia Game
+                        <a class="labelLink" href="https://rwieberdink.github.io/TriviaGame/" target="_blank">
+                        <br>Play
+                        </a> | 
+                        <a class="labelLink" href="https://github.com/rwieberdink/TriviaGame/" target="_blank">
+                            Code
+                        </a>
+                    </span>
                 </div>
     
-                <div class="col-lg-4 col-sm-12">
+                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <a href="https://rwieberdink.github.io/GringottsCoinCollector/" target="_blank">
+                    <img class="workSample" src="assets/images/gringottsThumbnail.jpg" alt="Gringott's Coin Collector Game">
+                    </a>
+                    <span class="label">
+                        Gringott's Coin Collector Game
+                        <a class="labelLink" href="https://rwieberdink.github.io/GringottsCoinCollector/" target="_blank">
+                        <br>Play
+                        </a> | 
+                        <a class="labelLink" href="https://github.com/rwieberdink/GringottsCoinCollector/" target="_blank">
+                            Code
+                        </a>
+                    </span>    
+                </div>
+
+                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <a href="https://rwieberdink.github.io/Train-Scheduler/" target="_blank">
                         <img class="workSample" src="assets/images/yokohama.jpg" alt="Train Scheduler"> 
                     </a>
+                    <span class="label">
+                        Train Scheduler
+                        <a class="labelLink" href="https://rwieberdink.github.io/Train-Scheduler/" target="_blank">
+                        <br>Play
+                        </a> | 
+                        <a class="labelLink" href="https://github.com/rwieberdink/Train-Scheduler/" target="_blank">
+                            Code
+                        </a>
+                    </span>
                 </div>
-    
-                <div class="col-lg-4 col-sm-12">
-                    <a href="https://rwieberdink.github.io/TriviaGame/" target="_blank">
-                        <img class="workSample" src="assets/images/miniShrine.jpg" alt="Harry Potter Trivia Game" style="border:0;">
+
+                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <a href="https://rwieberdink.github.io/GIFtastic/" target="_blank">
+                        <img class="workSample" src="assets/images/tvThumbnail.jpg" alt="GIF-Tastic">
                     </a>
+                    <span class="label">
+                        GIF-Tastic
+                        <a class="labelLink" href="https://rwieberdink.github.io/GIFtastic/" target="_blank">
+                        <br>Play
+                        </a> | 
+                        <a class="labelLink" href="https://github.com/rwieberdink/GIFtastic/" target="_blank">
+                            Code
+                        </a>
+                    </span>
                 </div>
+
+                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <a href="https://rwieberdink.github.io/Psychic-Game/" target="_blank">
+                    <img class="workSample" src="assets/images/buddhistMonk.jpg" alt="Psychic Game">
+                    </a>
+                    <span class="label">
+                        Madam Zulimar's Psychic Game
+                        <a class="labelLink" href="https://rwieberdink.github.io/Psychic-Game/" target="_blank">
+                        <br>Play
+                        </a> | 
+                        <a class="labelLink" href="https://github.com/rwieberdink/Psychic-Game/" target="_blank">
+                            Code
+                        </a>
+                    </span>
+                </div>  
+                              
             </div>
 
         </div>
