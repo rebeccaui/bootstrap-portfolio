@@ -35,7 +35,7 @@
             <h1>Contact Me</h1>
             <p class="divider"></p>
             <p id="contactList"><b>Email</b>: rebeccawieberdink@gmail.com<br />
-            <b>LinkedIn: </b><a href="https://www.linkedin.com/in/rebecca-wieberdink-915a2a115" target="_blank">https://www.linkedin.com/in/rebecca-wieberdink-915a2a115</a><br />
+            <b>LinkedIn: </b><a href="https://www.linkedin.com/in/rcwieberdink" target="_blank">https://www.linkedin.com/in/rcwieberdink</a><br />
             <b>GitHub: </b><a href="https://github.com/rwieberdink" target="_blank">https://github.com/rwieberdink</a><br />
             <b>Twitter: </b><a href="https://twitter.com/codeNameWiebs" target="_blank">@codeNameWiebs</a></p>
             
@@ -44,12 +44,10 @@
             <h1>Send a Message</h1>
             <p class="divider"></p>
 
-            <form id="contact-form" method="post" role="form">
+            <form id="contact-form" action="https://formspree.io/rebeccawieberdink@gmail.com">
 
-                    <div class="messages"></div>
-                
+                    <!--<div class="messages"></div>-->
                     <div class="controls">
-                
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -72,7 +70,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="form_email">Email</label>
-                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email address" required="required" data-error="Valid email is required.">
+                                    <input id="form_email" type="email" name="_replyto" class="form-control" placeholder="Please enter your email address" required="required" data-error="Valid email is required.">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -96,7 +94,7 @@
                             </div>
 
                             <div class="col-md-12">
-                                <input type="submit" class="btn btn-send" value="Send message">
+                                <input type="submit" class="btn btn-send" value="Send">
                             </div>
                         </div>
 
