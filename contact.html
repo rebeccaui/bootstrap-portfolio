@@ -30,8 +30,8 @@
             </div>
         </nav>
 
-    <div class="container" id="middleSection">
-        <div class="jumbotron">
+    <div class="container clearfix middleSection">
+        <div class="jumbotron clearfix">
             <h1>Contact Me</h1>
             <p class="divider"></p>
             <p id="contactList"><b>Email</b>: rebeccawieberdink@gmail.com<br />
@@ -105,10 +105,30 @@
 
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">Copyright &copy;</span>
+            <span class="text-muted">Copyright &copy; <span id="year"></span></span>
         </div>
     </footer>
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
     
+    <!-- Default Statcounter code-->
+    <script type="text/javascript">
+        var sc_project=11841960; 
+        var sc_invisible=1; 
+        var sc_security="5d9eff66"; 
+        var sc_https=1; 
+        </script>
+        <script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js" async></script>
+        <noscript><div class="statcounter"><a title="Web Analytics"
+        href="http://statcounter.com/" target="_blank"><img class="statcounter"
+        src="//c.statcounter.com/11841960/0/5d9eff66/1/" alt="Web
+        Analytics"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
 </body>
 
 </html>

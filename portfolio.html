@@ -29,8 +29,8 @@
             </div>
         </nav>
 
-    <div class="container" id="middleSection">
-        <div class="jumbotron">
+    <div class="container clearfix middleSection">
+        <div class="jumbotron clearfix">
             <h1>Portfolio</h1>
             <p class="divider"></p>
 
@@ -194,11 +194,50 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">Copyright &copy;</span>
+            <span class="text-muted">Copyright &copy; <span id="year"></span></span>
         </div>
     </footer>
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+    
+
+    <!-- Bootstrap 4.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+    <!-- locals -->
+	<script type="text/javascript" src="/assets/javascript/app.js"></script>
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+
+    <!-- Default Statcounter code-->
+    <script type="text/javascript">
+        var sc_project=11841960; 
+        var sc_invisible=1; 
+        var sc_security="5d9eff66"; 
+        var sc_https=1; 
+        </script>
+        <script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js" async></script>
+        <noscript><div class="statcounter"><a title="Web Analytics"
+        href="http://statcounter.com/" target="_blank"><img class="statcounter"
+        src="//c.statcounter.com/11841960/0/5d9eff66/1/" alt="Web
+        Analytics"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
     
 </body>
 
