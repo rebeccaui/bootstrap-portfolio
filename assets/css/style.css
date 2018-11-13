@@ -43,6 +43,7 @@ body {
     height: 100px;
     width: auto;
 }
+
 /*
 .logo-box {
     align-content: center;
@@ -50,16 +51,14 @@ body {
     display: block;
     text-align: center;
     vertical-align: middle;
-
 }
-
 .triforce-logo {
     height: 40px;
     width: auto;
     text-align: center;
-
 }
 */
+
 #navLinks {
     text-align: right;
     text-decoration: hidden;
@@ -103,6 +102,12 @@ a:focus {
     background-color: #FFDAD4;
     border-top: 4px solid #D3A13B;
     box-shadow: -2px 2px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer::before {
+    content: " ";
+    display: block;
+    clear: both;
 }
 
 .text-muted {
@@ -234,13 +239,14 @@ a:focus {
 #portfolioRow {
     height: auto;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: center;
 }
 
 .thumbnail img {
     height: 200px;
-    margin: 0px 20px 20px 0px;
+    margin: 0px 20px 10px 0px;
     display: block;
     background: #fff;
     border-radius: 2px;
@@ -297,57 +303,14 @@ a:focus {
 
 .thumbnail img:hover {
     opacity: 0.3;
-
 }
 
 .label:hover {
     opacity: 1;
 }
 
-
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
-}
-
-/* Media Queries  
-============================ */
-@media all and (max-width: 820px) {
-
-    .jumbotron {
-        margin: 30px 0 0 0;
-    }
-    .clearfix::after {
-        content: " ";
-        display: block;
-        clear: both;
-    }    
-    .thumbnail img {
-        max-width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        height: 700px;
-    }
-    .thumbnail {
-        height: 700px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .jumbotron {
-        padding: 25px 0 90px 0;
-    }
-    .clearfix::after {
-        content: " ";
-        display: block;
-        clear: both;
-    }    
-    .thumbnail img {
-        max-width: 100%;
-        opacity: 1;
-        transition: .5s ease;
-        height: 700px;
-    }
-  
 }
