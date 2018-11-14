@@ -11,26 +11,39 @@
     <!--Bootstrap and CSS Links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-        <nav class="container navbar navbar-expand-lg justify-content-end clearfix">
-            <div class="nav-box clearfix" id="nameBox">
-                    <img class="name-logo" src="assets/images/name-logo-crop.png">
-                </div>
-            <div class="nav-box clearfix" id="logo-box">
-                <!--<img class="triforce-logo" src="assets/images/triforce.png">-->
-            </div>
-            <!--Navigation-->
-            <div class="nav-box clearfix" id="navLinks">
-                <ul id="navList">
-                    <a class="nav-link" href="index.html">About</a>
-                        <span class="separator"> | </span>
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        <span class="separator"> | </span>
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </ul>
-            </div>
-        </nav>
+
+    <!--NAVIGATION BAR-->
+    <nav class="container navbar navbar-expand-lg justify-content-end clearfix">
+        <!--Hamburger-->
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <!--Name Logo-->
+        <div class="nav-box" id="nameBox">
+            <img class="name-logo" src="assets/images/name-logo-crop.png">
+        </div>
+        
+        <!--Triforce Logo-->
+        <div class="nav-box" id="logo-box">
+            <!--<img class="triforce-logo" src="assets/images/triforce.png">-->
+        </div>
+        
+        <!--Navigation Links-->
+        <div class="nav-box" id="navLinks">
+            <ul id="js-menu" class="main-nav">
+                <li><a class="nav-link" href="index.html">About</a></li>
+                    <span class="separator"> | </span>
+                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <span class="separator"> | </span>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container clearfix middleSection">
         <div class="jumbotron clearfix">
@@ -40,150 +53,150 @@
                 <div class="portfolioRow flex">
 
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://brewhound.herokuapp.com/" target="_blank">
+                    <a href="https://brewhound.herokuapp.com/" target="_blank" rel="noopener">
                     <img class="workSample" src="assets/images/brewhound.jpg" alt="BrewHound App">
                     </a>
                     <span class="label">
                         BrewHound
-                        <a class="labelLink" href="https://brewhound.herokuapp.com/" target="_blank">
+                        <a class="labelLink" href="https://brewhound.herokuapp.com/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/homsau/brewhound/" target="_blank">
+                        <a class="labelLink" href="https://github.com/homsau/brewhound/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
                 </div>
                     
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://rocky-brook-81163.herokuapp.com/" target="_blank">
+                    <a href="https://rocky-brook-81163.herokuapp.com/" target="_blank" rel="noopener">
                     <img class="workSample" src="assets/images/playlisted.jpg" alt="Playlisted App">
                     </a>
                     <span class="label">
                         Playlisted
-                        <a class="labelLink" href="https://rocky-brook-81163.herokuapp.com/" target="_blank">
+                        <a class="labelLink" href="https://rocky-brook-81163.herokuapp.com/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/Mkelsey25/playlisted/" target="_blank">
+                        <a class="labelLink" href="https://github.com/Mkelsey25/playlisted/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
                 </div>
 
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://homsau.github.io/State-of-the-World/" target="_blank">
+                    <a href="https://homsau.github.io/State-of-the-World/" target="_blank" rel="noopener">
                     <img class="workSample" src="assets/images/worldhands.jpg" alt="State of the World App">
                     </a>
                     <span class="label">
                         State of the World
-                        <a class="labelLink" href="https://homsau.github.io/State-of-the-World/" target="_blank">
+                        <a class="labelLink" href="https://homsau.github.io/State-of-the-World/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/rwieberdink/State-of-the-World/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/State-of-the-World/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
                 </div>
 
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://rwieberdink.github.io/TriviaGame/" target="_blank">
+                    <a href="https://rwieberdink.github.io/TriviaGame/" target="_blank" rel="noopener">
                         <img class="workSample" src="assets/images/hpTriviaThumbnail.jpg" alt="Harry Potter Trivia Game" style="border:0;">
                     </a>
                     <span class="label">
                         Harry Potter Trivia Game
-                        <a class="labelLink" href="https://rwieberdink.github.io/TriviaGame/" target="_blank">
+                        <a class="labelLink" href="https://rwieberdink.github.io/TriviaGame/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/rwieberdink/TriviaGame/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/TriviaGame/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
                 </div>
     
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://rwieberdink.github.io/GringottsCoinCollector/" target="_blank">
+                    <a href="https://rwieberdink.github.io/GringottsCoinCollector/" target="_blank" rel="noopener">
                     <img class="workSample" src="assets/images/gringottsThumbnail.jpg" alt="Gringott's Coin Collector Game">
                     </a>
                     <span class="label">
                         Gringott's Coin Collector Game
-                        <a class="labelLink" href="https://rwieberdink.github.io/GringottsCoinCollector/" target="_blank">
+                        <a class="labelLink" href="https://rwieberdink.github.io/GringottsCoinCollector/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/rwieberdink/GringottsCoinCollector/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/GringottsCoinCollector/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>    
                 </div>
 
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://rwieberdink.github.io/Train-Scheduler/" target="_blank">
+                    <a href="https://rwieberdink.github.io/Train-Scheduler/" target="_blank" rel="noopener">
                         <img class="workSample" src="assets/images/turnerfield.jpg" alt="Train Scheduler"> 
                     </a>
                     <span class="label">
                         Train Scheduler
-                        <a class="labelLink" href="https://rwieberdink.github.io/Train-Scheduler/" target="_blank">
+                        <a class="labelLink" href="https://rwieberdink.github.io/Train-Scheduler/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/rwieberdink/Train-Scheduler/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/Train-Scheduler/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
                 </div>
 
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://pure-escarpment-91569.herokuapp.com/" target="_blank">
+                    <a href="https://pure-escarpment-91569.herokuapp.com/" target="_blank" rel="noopener">
                         <img class="workSample" src="assets/images/cat_computer.gif" alt="Gimme That Becky Dating App">
                     </a>
                     <span class="label">
                         Gimme That Becky Dating App
-                        <a class="labelLink" href="https://pure-escarpment-91569.herokuapp.com/" target="_blank">
+                        <a class="labelLink" href="https://pure-escarpment-91569.herokuapp.com/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/rwieberdink/FriendFinder/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/FriendFinder/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
                 </div>
 
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://rwieberdink.github.io/GIFtastic/" target="_blank">
+                    <a href="https://rwieberdink.github.io/GIFtastic/" target="_blank" rel="noopener">
                         <img class="workSample" src="assets/images/tvThumbnail.jpg" alt="GIF-Tastic">
                     </a>
                     <span class="label">
                         GIF-Tastic
-                        <a class="labelLink" href="https://rwieberdink.github.io/GIFtastic/" target="_blank">
+                        <a class="labelLink" href="https://rwieberdink.github.io/GIFtastic/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/rwieberdink/GIFtastic/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/GIFtastic/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
                 </div>
 
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://rwieberdink.github.io/Psychic-Game/" target="_blank">
+                    <a href="https://rwieberdink.github.io/Psychic-Game/" target="_blank" rel="noopener">
                     <img class="workSample" src="assets/images/buddhistMonk.jpg" alt="Psychic Game">
                     </a>
                     <span class="label">
                         Madam Zulimar's Psychic Game
-                        <a class="labelLink" href="https://rwieberdink.github.io/Psychic-Game/" target="_blank">
+                        <a class="labelLink" href="https://rwieberdink.github.io/Psychic-Game/" target="_blank" rel="noopener">
                         <br>Play
                         </a> | 
-                        <a class="labelLink" href="https://github.com/rwieberdink/Psychic-Game/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/Psychic-Game/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
                 </div>  
 
                 <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <a href="https://rwieberdink.github.io/bamazon/" target="_blank">
+                    <a href="https://rwieberdink.github.io/bamazon/" target="_blank" rel="noopener">
                         <img class="workSample" src="assets/images/yokohama.jpg" alt="Bamazon Shopping Node App"> 
                     </a>
                     <span class="label">
                         Becky, Bath, and Beyond
-                        <a class="labelLink" href="https://github.com/rwieberdink/bamazon/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/bamazon/" target="_blank" rel="noopener">
                         <br>Game Instructions
                         </a> | 
-                        <a class="labelLink" href="https://github.com/rwieberdink/bamazon/" target="_blank">
+                        <a class="labelLink" href="https://github.com/rwieberdink/bamazon/" target="_blank" rel="noopener">
                             Code
                         </a>
                     </span>
@@ -215,6 +228,13 @@
     <script>
         // Get the current year for the copyright
         $('#year').text(new Date().getFullYear());
+
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
+
+        navBarToggle.addEventListener("click", function() {
+        mainNav.classList.toggle("active");
+        });
     </script>
 
     <!-- Default Statcounter code-->

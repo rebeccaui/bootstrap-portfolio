@@ -14,24 +14,34 @@
 </head>
 <body>
 
-        <nav class="container navbar navbar-expand-lg justify-content-end clearfix">
-            <div class="nav-box clearfix" id="nameBox">
-                    <img class="name-logo" src="assets/images/name-logo-crop.png">
-                </div>
-            <div class="nav-box clearfix" id="logo-box">
-                <!--<img class="triforce-logo" src="assets/images/triforce.png">-->
-            </div>
-            <!--Navigation-->
-            <div class="nav-box clearfix" id="navLinks">
-                <ul id="navList">
-                    <a class="nav-link" href="index.html">About</a>
-                        <span class="separator"> | </span>
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        <span class="separator"> | </span>
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </ul>
-            </div>
-        </nav>
+    <!--NAVIGATION BAR-->
+    <nav class="container navbar navbar-expand-lg justify-content-end clearfix">
+        <!--Hamburger-->
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <!--Name Logo-->
+        <div class="nav-box" id="nameBox">
+            <img class="name-logo" src="assets/images/name-logo-crop.png">
+        </div>
+        
+        <!--Triforce Logo-->
+        <div class="nav-box" id="logo-box">
+            <!--<img class="triforce-logo" src="assets/images/triforce.png">-->
+        </div>
+        
+        <!--Navigation Links-->
+        <div class="nav-box" id="navLinks">
+            <ul id="js-menu" class="main-nav">
+                <li><a class="nav-link" href="index.html">About</a></li>
+                    <span class="separator"> | </span>
+                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <span class="separator"> | </span>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container clearfix middleSection">
         <div class="jumbotron clearfix">
@@ -126,6 +136,12 @@
     <script>
         // Get the current year for the copyright
         $('#year').text(new Date().getFullYear());
+
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
+
+        navBarToggle.addEventListener("click", function() {
+        mainNav.classList.toggle("active");
     </script>
     
     <!-- Default Statcounter code-->
