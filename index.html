@@ -11,16 +11,13 @@
     <!--Bootstrap and CSS Links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
-
 <body>
 
     <!--NAVIGATION BAR-->
     <nav class="container navbar navbar-expand-lg justify-content-end clearfix">
-        <!--Hamburger-->
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
 
         <!--Name Logo-->
         <div class="nav-box" id="nameBox">
@@ -32,14 +29,31 @@
             <!--<img class="triforce-logo" src="assets/images/triforce.png">-->
         </div>
         
-        <!--Navigation Links-->
+       
         <div class="nav-box" id="navLinks">
+        
+            <!--Hamburger-->
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+    
+            <!--Navigation Links-->
             <ul id="js-menu" class="main-nav">
-                <li><a class="nav-link" href="index.html">About</a></li>
-                    <span class="separator"> | </span>
-                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <span class="separator"> | </span>
-                <li><a class="nav-link" href="contact.html">Contact</a></li>
+                <div class="nav-link-dropdown">
+                    <li><a class="nav-link" href="index.html">About</a></li>
+                </div>    
+                
+                <span class="separator"> | </span>
+
+                <div class="nav-link-dropdown">
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                </div> 
+                    
+                <span class="separator"> | </span>
+                
+                <div class="nav-link-dropdown">
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </div>
             </ul>
         </div>
     </nav>
@@ -81,10 +95,18 @@
     </div>
 
     <footer class="footer clearfix">
-        <div class="container">
+        <div class="container copyright">
             <span class="text-muted">Copyright &copy; <span id="year"></span></span>
             <a href="https://www.instagram.com/fullstackfemmes" aria-label="Fuul Stack Femmes on Instagram"></a>
         </div>
+        <!--<div class="container">
+            <ul class="fa-ul">
+                <li><span class="fa-li" ><i class="fas fa-linkedin"></i></span>List icons can</li>
+                <li><span class="fa-li"><i class="fas fa-instagram"></i></span>be used to</li>
+                <li><span class="fa-li"><i class="fas fa-facebook-f"></i></span>replace bullets</li>
+                <li><span class="fa-li"><i class="far fa-twitter"></i></span>in lists</li>
+            </ul>
+        </div>-->
     </footer>
 
     <!-- Bootstrap 4.1 -->
@@ -96,18 +118,7 @@
     crossorigin="anonymous"></script>
 
     <!-- locals -->
-    <script type="text/javascript" src="/assets/javascript/app.js"></script>
-
-    <script>
-        // Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
-
-        let mainNav = document.getElementById("js-menu");
-        let navBarToggle = document.getElementById("js-navbar-toggle");
-
-        navBarToggle.addEventListener("click", function() {
-        mainNav.classList.toggle("active");
-    </script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
     <!-- Default Statcounter code-->
     <script type="text/javascript">

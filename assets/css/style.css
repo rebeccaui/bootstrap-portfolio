@@ -11,9 +11,12 @@ body {
 /* NavBar  
 ============================ */
 .navbar {
+    position: relative;
     display: flex;
+    align-items: center;
+
     justify-content: stretch;
-    padding: 2px 20px 0px 0px;
+    padding: 0px 20px 0px 0px;
     background-color: #FFDAD4;
     text-decoration: hidden;
     width: 100%;
@@ -22,6 +25,7 @@ body {
     border-bottom: 4px solid #D3A13B;
 }
 
+/* Divs in the Navbar will be in a 1:1:1 ratio */
 .navbar > div {
     flex: 1;
 }
@@ -35,12 +39,12 @@ body {
     height: 70px;
     text-align: center; /*keeps .name-logo centered in div*/
     margin: 0 0 0 30px;
-    min-width: 310px;
+    /*min-width: 310px;*/
 
 }
 
 .name-logo {
-    height: 80px;
+    height: 50px;
     width: auto;
     z-index: 1;
 }
@@ -60,35 +64,40 @@ body {
 }
 */
 
-.navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
-}
 
 #navLinks {
     display: flex;
     flex-wrap: nowrap;
-    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     font-family: ‘Arial’, ‘Helvetica’, Helvetica, sans-serif;
-    padding: 25px 10px 0 0;
+    padding: 5px 10px 0 0;
     background-color: #FFDAD4;
-    color: #D3A13B;
+    color: white;
     font-size: 16px;
     /*text-shadow: 2px 1px 1px rgba(0,0,0,0.3);*/
+}
+
+.navbar-toggle {
+    display: block;
+    right: 20px;
+    cursor: pointer;
+    color: #D3A13B;
+    text-shadow: -2px 2px 5px 4px#a8802f;
+    font-size: 24px;
+}
+
+.nav-link-dropdown {
+    text-align: center;
+    background-color: #FFDAD4;
+    color: white;
+
 }
 
 .main-nav {
     list-style-type: none;
     display: none;
-}
-
-.main-nav li {
-    text-align: center;
 }
 
 .separator {
@@ -99,16 +108,16 @@ body {
     display: block;
 }
 
-a:link, a:visited, a:active {
-    color: #D3A13B;
+.nav-link:link, .nav-link:visited, .nav-link:active {
+    color: #ffffff;
     text-decoration: none;    
 }
 
-a:hover {
-    color: rgb(248, 172, 160);
+.nav-link:hover {
+    color: #D3A13B;
 }
 
-a:focus {
+.nav-link:focus {
     text-decoration: hidden;
     color: #a8802f;
     text-decoration: wavy;
@@ -204,8 +213,30 @@ a:focus {
 /* Contact Form  
 ============================ */
 #contactList {
-    color: #413d3d;
     font-size: 14px;
+}
+
+#my-email {
+    color: #413d3d;
+}
+
+.contact-link:link, .contact-link:visited, .contact-link:active {
+    color: #D3A13B;
+    text-decoration: none;    
+}
+
+.contact-link:hover {
+    color: #FFDAD4;
+}
+
+.contact-link:focus {
+    text-decoration: hidden;
+    color: #a8802f;
+    text-decoration: wavy;
+}
+
+.form-control {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 .btn-send {
@@ -385,5 +416,18 @@ a:focus {
         height: 100px;
         width: auto;
         z-index: 1;
+    }
+
+    #navLinks {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        width: 100%;
+        font-family: ‘Arial’, ‘Helvetica’, Helvetica, sans-serif;
+        padding: 25px 10px 0 0;
+        background-color: #FFDAD4;
+        /*color: rgba(255, 255, 255, 0.992);*/
+        font-size: 16px;
+        /*text-shadow: 2px 1px 1px rgba(0,0,0,0.3);*/
     }
 }
