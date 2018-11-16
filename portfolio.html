@@ -11,6 +11,7 @@
     <!--Bootstrap and CSS Links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="dist/hamburgers.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
@@ -31,26 +32,32 @@
         
         <div class="nav-box" id="navLinks">
             
-            <!--Hamburger-->
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
+            
     
             <!--Navigation Links-->
-            <ul id="js-menu" class="main-nav">
-                <div class="nav-link-dropdown">
-                    <li><a class="nav-link" href="index.html">About</a></li>
-                </div>    
-                
-                <span class="separator"> | </span>
+            <nav class="collapse">
+            <ul class="main-nav-hamburger">
+                <li><a class="nav-link" href="index.html">About</a></li>
+            
+                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
 
-                <div class="nav-link-dropdown">
-                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                </div> 
-                    
-                <span class="separator"> | </span>
-                
-                <div class="nav-link-dropdown">
+            <!--Hamburger-->
+            <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation" data-toggle="collapse" data-target=".collapse">
+                <span class="hamburger-box navbar-toggle">
+                    <span class="hamburger-inner"></span>
+                    <!--<i class="fas fa-bars"></i>-->
+                </span>
+            </button>
+
+            <ul class="main-nav">
+                    <li><a class="nav-link" href="index.html">About</a></li>                
+                        <span class="separator"> | </span>
+                    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>                    
+                        <span class="separator"> | </span>
                     <li><a class="nav-link" href="contact.html">Contact</a></li>
                 </div>
             </ul>
