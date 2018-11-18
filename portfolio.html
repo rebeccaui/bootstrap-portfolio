@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="assets/images/inkedFavicon.jpg" type="image/x-icon"/>
     <link rel="icon" href="assets/images/inkedFavicon.jpg" type="image/ico"/>
     <!--Bootstrap and CSS Links-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type= "text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="dist/hamburgers.css">
     <!--Font Awesome-->
@@ -18,7 +18,7 @@
 <body>
 
     <!--NAVIGATION BAR-->
-    <nav class="container navbar navbar-expand-lg justify-content-end clearfix">
+    <nav class="navbar sticky-top clearfix">
         
         <!--Name Logo-->
         <div class="nav-box" id="nameBox">
@@ -31,16 +31,12 @@
         </div>
         
         <div class="nav-box" id="navLinks">
-            
-            
     
             <!--Navigation Links-->
             <nav class="collapse">
-            <ul class="main-nav-hamburger">
+            <ul class="main-nav-hamburger collapse">
                 <li><a class="nav-link" href="index.html">About</a></li>
-            
                 <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                            
                 <li><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             </nav>
@@ -71,11 +67,11 @@
 
                 <div class="portfolioRow flex">
 
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://brewhound.herokuapp.com/" target="_blank" rel="noopener">
-                    <img class="workSample" src="assets/images/brewhound.jpg" alt="BrewHound App">
+                    <img class="workSample img-thumbnail card-img-top" src="assets/images/brewhound.jpg" alt="BrewHound App">
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         BrewHound
                         <a class="labelLink" href="https://brewhound.herokuapp.com/" target="_blank" rel="noopener">
                         <br>Play
@@ -86,11 +82,11 @@
                     </span>
                 </div>
                     
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://rocky-brook-81163.herokuapp.com/" target="_blank" rel="noopener">
-                    <img class="workSample" src="assets/images/playlisted.jpg" alt="Playlisted App">
+                        <img class="workSample img-thumbnail card-img-top" src="assets/images/playlisted.jpg" alt="Playlisted App">
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         Playlisted
                         <a class="labelLink" href="https://rocky-brook-81163.herokuapp.com/" target="_blank" rel="noopener">
                         <br>Play
@@ -101,11 +97,11 @@
                     </span>
                 </div>
 
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://homsau.github.io/State-of-the-World/" target="_blank" rel="noopener">
-                    <img class="workSample" src="assets/images/worldhands.jpg" alt="State of the World App">
+                    <img class="workSample img-thumbnail card-img-top" src="assets/images/worldhands.jpg" alt="State of the World App">
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         State of the World
                         <a class="labelLink" href="https://homsau.github.io/State-of-the-World/" target="_blank" rel="noopener">
                         <br>Play
@@ -116,11 +112,11 @@
                     </span>
                 </div>
 
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://rwieberdink.github.io/TriviaGame/" target="_blank" rel="noopener">
-                        <img class="workSample" src="assets/images/hpTriviaThumbnail.jpg" alt="Harry Potter Trivia Game" style="border:0;">
+                        <img class="workSample img-thumbnail card-img-top" src="assets/images/hpTriviaThumbnail.jpg" alt="Harry Potter Trivia Game" style="border:0;">
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         Harry Potter Trivia Game
                         <a class="labelLink" href="https://rwieberdink.github.io/TriviaGame/" target="_blank" rel="noopener">
                         <br>Play
@@ -131,11 +127,11 @@
                     </span>
                 </div>
     
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://rwieberdink.github.io/GringottsCoinCollector/" target="_blank" rel="noopener">
-                    <img class="workSample" src="assets/images/gringottsThumbnail.jpg" alt="Gringott's Coin Collector Game">
+                    <img class="workSample img-thumbnail card-img-top" src="assets/images/gringottsThumbnail.jpg" alt="Gringott's Coin Collector Game">
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         Gringott's Coin Collector Game
                         <a class="labelLink" href="https://rwieberdink.github.io/GringottsCoinCollector/" target="_blank" rel="noopener">
                         <br>Play
@@ -146,11 +142,11 @@
                     </span>    
                 </div>
 
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://rwieberdink.github.io/Train-Scheduler/" target="_blank" rel="noopener">
-                        <img class="workSample" src="assets/images/turnerfield.jpg" alt="Train Scheduler"> 
+                        <img class="workSample img-thumbnail card-img-top" src="assets/images/turnerfield.jpg" alt="Train Scheduler"> 
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         Train Scheduler
                         <a class="labelLink" href="https://rwieberdink.github.io/Train-Scheduler/" target="_blank" rel="noopener">
                         <br>Play
@@ -161,11 +157,11 @@
                     </span>
                 </div>
 
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://pure-escarpment-91569.herokuapp.com/" target="_blank" rel="noopener">
-                        <img class="workSample" src="assets/images/cat_computer.gif" alt="Gimme That Becky Dating App">
+                        <img class="workSample img-thumbnail card-img-top" src="assets/images/cat_computer.gif" alt="Gimme That Becky Dating App">
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         Gimme That Becky Dating App
                         <a class="labelLink" href="https://pure-escarpment-91569.herokuapp.com/" target="_blank" rel="noopener">
                         <br>Play
@@ -176,11 +172,11 @@
                     </span>
                 </div>
 
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://rwieberdink.github.io/GIFtastic/" target="_blank" rel="noopener">
-                        <img class="workSample" src="assets/images/tvThumbnail.jpg" alt="GIF-Tastic">
+                        <img class="workSample img-thumbnail card-img-top" src="assets/images/tvThumbnail.jpg" alt="GIF-Tastic">
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         GIF-Tastic
                         <a class="labelLink" href="https://rwieberdink.github.io/GIFtastic/" target="_blank" rel="noopener">
                         <br>Play
@@ -191,11 +187,11 @@
                     </span>
                 </div>
 
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://rwieberdink.github.io/Psychic-Game/" target="_blank" rel="noopener">
-                    <img class="workSample" src="assets/images/buddhistMonk.jpg" alt="Psychic Game">
+                    <img class="workSample img-thumbnail card-img-top" src="assets/images/buddhistMonk.jpg" alt="Psychic Game">
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         Madam Zulimar's Psychic Game
                         <a class="labelLink" href="https://rwieberdink.github.io/Psychic-Game/" target="_blank" rel="noopener">
                         <br>Play
@@ -206,11 +202,11 @@
                     </span>
                 </div>  
 
-                <div class="thumbnail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
                     <a href="https://rwieberdink.github.io/bamazon/" target="_blank" rel="noopener">
-                        <img class="workSample" src="assets/images/yokohama.jpg" alt="Bamazon Shopping Node App"> 
+                        <img class="workSample img-thumbnail card-img-top" src="assets/images/yokohama.jpg" alt="Bamazon Shopping Node App"> 
                     </a>
-                    <span class="label">
+                    <span class="label rounded">
                         Becky, Bath, and Beyond
                         <a class="labelLink" href="https://github.com/rwieberdink/bamazon/" target="_blank" rel="noopener">
                         <br>Game Instructions
@@ -227,7 +223,7 @@
     
 
     <!-- FOOTER -->
-    <footer class="footer clearfix">
+    <footer class="footer fixed-bottom clearfix">
         <div class="container">
             <span class="text-muted">Copyright &copy; <span id="year"></span></span>
         </div>

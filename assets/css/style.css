@@ -11,12 +11,11 @@ body {
 /* NavBar  
 ============================ */
 .navbar {
-    position: relative;
     display: flex;
     align-items: center;
 
     justify-content: stretch;
-    padding: 0px 20px 0px 0px;
+    padding: 0px 8px 0px 0px;
     background-color: #FFDAD4;
     text-decoration: hidden;
     width: 100%;
@@ -65,7 +64,6 @@ body {
 }
 */
 
-
 #navLinks {
     display: flex;
     flex-wrap: nowrap;
@@ -74,9 +72,8 @@ body {
     width: 100%;
     font-family: ‘Arial’, ‘Helvetica’, Helvetica, sans-serif;
     padding: 5px 5px 0 0;
-    background-color: #FFDAD4;
+    background-color: transparent;
     color: white;
-    font-size: 16px;
     /*text-shadow: 2px 1px 1px rgba(0,0,0,0.3);*/
 }
 
@@ -89,6 +86,10 @@ body {
     /*transition: opacity 600ms 0s ease, top 600ms 0s ease;*/
 }
 
+.hamburger {
+    padding: 0 0 !important;
+}
+
 .hamburger-inner {
     cursor: pointer;
     color: #D3A13B;
@@ -98,6 +99,7 @@ body {
 
 .active {
     display: block;
+    padding: 0 0;
 }
 
 .collapse {
@@ -108,18 +110,17 @@ body {
 
 .main-nav-hamburger {
     list-style: none;
-    text-align: center;
+    text-align: left;
     background-color: #FFDAD4;
     color: white;
-    width: 200px;
-
+    margin: 130px 0 0 0;
 }
 
 .main-nav-hamburger li {
-    
-
     display: block;
-        /*float:left;
+    height: 50px;
+    width: 200px;
+    /*float:left;
     width:300px; // adjust
     heigh:150px; // adjust
     padding: 5px; //adjust*/
@@ -139,6 +140,8 @@ body {
     color: #a8802f;
     text-decoration: wavy;
 }
+
+
 
 /*Horizontal nav & separators for larger screens*/
 .main-nav {
@@ -160,7 +163,6 @@ body {
 
 .footer {
     text-align: center;
-    /*position: fixed;*/
     display: flex;
     bottom: 0;
     width: 100%;
@@ -197,7 +199,7 @@ body {
 }
 
 .jumbotron {
-    padding: 25px 0 40px 0;
+    padding: 40px 40px;
     margin: 35px 15px 15px 25px;
     background-color: white;
     box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.2);
@@ -319,17 +321,28 @@ body {
 
 /* Portfolio  
 ============================ */
-#portfolioRow {
+.portfolioRow {
     height: auto;
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
-    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap; /*set flex-wrap and flex-direction*/
+    /* tweak where items line
+      up on the row
+      valid values are: flex-start,
+      flex-end, space-between,
+      space-around, stretch 
+    align-content: flex-end;*/
 }
 
-.thumbnail img {
-    height: 200px;
-    margin: 0px 20px 10px 0px;
+.workSample {
+    margin: 0 0 !important;
+
+}
+
+.card img {
+    height: 300px !important;
+    max-width: 300px;
     display: block;
     background: #fff;
     border-radius: 2px;
@@ -343,11 +356,13 @@ body {
     transition: .5s ease;
 }
 
-.thumbnail {
+.card {
     background-color: transparent;
     border: none;
     text-align: center;
     padding: 0 10px 0 10px;
+    margin: 20px 5px;
+    flex-basis: content;
 
     /*width: 75%;
     height: 75%;
@@ -384,7 +399,7 @@ body {
     color: #777777;
 }
 
-.thumbnail img:hover {
+.card img:hover {
     opacity: 0.3;
 }
 
@@ -400,7 +415,7 @@ body {
 
 /* Media Queries  
 ============================ */
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 968px) {
     .navbar {
         display: flex;
         justify-content: stretch;
@@ -439,22 +454,36 @@ body {
         display: inline;
     }
 
-    .name-logo {
-        height: 100px;
-        width: auto;
-        z-index: 1;
+    .collapse, 
+    .main-nav-hamburger,
+    .hamburger, 
+    .hamburger--collapse, 
+    .hamburger-box,
+    .navbar-toggle, 
+    .hamburger-inner,
+    .nav-box button {
+        display: none;
     }
 
     #navLinks {
         display: flex;
         flex-wrap: nowrap;
         text-align: center;
+        justify-content: flex-end;
         width: 100%;
         font-family: ‘Arial’, ‘Helvetica’, Helvetica, sans-serif;
         padding: 25px 10px 0 0;
-        background-color: #FFDAD4;
-        /*color: rgba(255, 255, 255, 0.992);*/
+        background-color: transparent;
         font-size: 16px;
+        /*color: rgba(255, 255, 255, 0.992);*/
         /*text-shadow: 2px 1px 1px rgba(0,0,0,0.3);*/
     }
 }
+
+@media screen and (min-width: 768px) {
+    .name-logo {
+        height: 100px;
+        width: auto;
+        z-index: 1;
+    }
+  }
